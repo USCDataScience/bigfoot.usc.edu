@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>USC Data Science - Bigfoot Sightings Data Insights</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link href="css/scrolling-nav.css" rel="stylesheet">
+    <link href="css/styles.css" rel="stylesheet">
+</head>
+
+<body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
+
+    <!-- Navigation -->
+    <div id="nav-main">
+        <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+            <div class="container">
+                <div class="navbar-header page-scroll">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand page-scroll" href="#page-top" style="color:white">Home</a>
+                </div>
+                <div class="collapse navbar-collapse navbar-ex1-collapse">
+                    <ul class="nav navbar-nav">
+                        <li class="hidden"><a class="page-scroll" href="#page-top"></a></li>
+                        <li><a class="page-scroll" href="#about"      style="color:#ffffff">About</a></li>
+                        <li><a class="page-scroll" href="#features"   style="color:#ffffff">Teams</a></li>
+                        <li><a class="page-scroll" href="#search"     style="color:#ffffff">Dataset</a></li>
+                        <li><a class="page-scroll" href="#learn-more" style="color:#ffffff">Partners</a></li>
+                    </ul>
+                    <a href="http://usc.edu" class="pull-right" style="margin-top:10px">
+                        <img src="images/usc-shield-name-white.svg" width="160px" height="38px" alt="USC">
+                    </a>
+                </div>
+            </div>
+        </nav>
+    </div>
+
+    <!-- Hero -->
+    <section id="intro" class="intro-section bigfoot-intro">
+        <div class="container" style="padding-top:100px">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h1 class="title">Bigfoot Sightings Data Insights</h1>
+                    <br>
+                    <a style="text-decoration:none" href="http://irds.usc.edu/">
+                        <h3 id="irdsgroup">USC Data Science</h3>
+                    </a>
+                </div>
+            </div>
+            <div class="row" style="padding-top:15px">
+                <div class="col-md-12">
+                    <a class="btn btn-default btn-lg page-scroll" href="#about" style="margin-top:5%">Learn More</a>
+                </div>
+            </div>
+            <div class="row" style="padding-top:20px">
+                <div class="col-md-12">
+                    <a class="btn btn-default btn-lg" href="https://nguyenlamvu88.github.io/dsci550_assignment_3_visualizations/dsci550_bigfoot_sightings_visualizations.html" target="_blank">Explore Visualizations</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About -->
+    <section id="about" class="about-section" style="margin-top:-1%; margin-bottom:5%">
+        <div class="container">
+            <div class="row">
+                <hr class="about-divider">
+                <h1>About Us</h1>
+                <hr class="about-divider">
+                <div class="jumbotron" style="margin-bottom:5%; margin-top:3%">
+                    <h2>What is Bigfoot Sightings Data Insights?</h2>
+                    <p class="lead text-left" style="margin-top:2%">
+                        This site presents DSCI 550 student work on the Bigfoot Field Researchers Organization (BFRO)
+                        sightings dataset. Across three assignments, teams enriched Bigfoot encounter reports with
+                        geospatial, environmental, temporal, and multimodal features, then turned that data into
+                        interactive browser-based D3 visualizations.
+                    </p>
+                    <p class="lead text-left">
+                        The first assignment asked students to augment the BFRO dataset with derived fields and at
+                        least three additional public datasets (weather, terrain, moon phase, population density).
+                        The second assignment added GeoTopicParser, SpaCy named entities, AI-generated imagery, image
+                        captions, and object-recognition features. The third assignment asked teams to build D3
+                        mini-sites and explore MEMEX ImageSpace, ImageCat, GeoParser, and Solr/ElasticSearch workflows.
+                    </p>
+                </div>
+                <div class="col-md-4">
+                    <div class="media">
+                        <div class="media-body">
+                            <h4 class="media-heading">Extraction &amp; Enrichment</h4>
+                            Students derived geospatial, environmental, moon-phase, witness-count, evidence, and
+                            temporal features from BFRO encounter reports spanning decades of sightings across the US.
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="media">
+                        <div class="media-body">
+                            <h4 class="media-heading">Interactive Visualizer</h4>
+                            Team mini-sites use D3 to explore sighting geography, moon-phase correlations, witness
+                            language patterns, proximity to geographic features, and temporal trends.
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="media">
+                        <div class="media-body">
+                            <h4 class="media-heading">Publicizer</h4>
+                            The gallery preserves student data science work as a static IRDS site deployable under
+                            the USC Data Science pages and browsable without a server.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Teams -->
+    <section id="features" class="features-section" style="margin-top:-1%; margin-bottom:5%">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <hr class="featurette-divider">
+                    <h1>Student Visualization Teams</h1>
+                    <hr class="featurette-divider">
+                </div>
+
+                <!-- Card: Vu Nguyen (Spring 2024) -->
+                <div class="col-sm-6 col-md-4">
+                    <div class="thumbnail team-card">
+                        <img src="images/bigfoot-banner.svg" alt="Bigfoot sightings map visualization">
+                        <div class="caption">
+                            <h3>Vu L. Nguyen &mdash; Spring 2024</h3>
+                            <p>
+                                Five D3.js visualizations on BFRO sightings data: a US geographical distribution
+                                map, sightings-by-moon-phase temporal chart, witness report word cloud, Mapbox
+                                proximity heatmap, and a treemap of witness counts by region and category.
+                            </p>
+                            <p>
+                                <a href="https://nguyenlamvu88.github.io/dsci550_assignment_3_visualizations/dsci550_bigfoot_sightings_visualizations.html"
+                                   class="btn btn-primary" role="button" target="_blank">View Visualizations</a>
+                                <a href="https://github.com/nguyenlamvu88/dsci550_assignment_3_visualizations"
+                                   class="btn btn-default" role="button" target="_blank">GitHub</a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card: Team 13 / Abotansky (Spring 2024) -->
+                <div class="col-sm-6 col-md-4">
+                    <div class="thumbnail team-card">
+                        <img src="images/bigfoot-banner.svg" alt="Bigfoot data visualization">
+                        <div class="caption">
+                            <h3>Team 13 &mdash; Spring 2024</h3>
+                            <span class="tag-offline">Site currently offline</span>
+                            <p>
+                                Team 13 (led by A. Botansky) produced the
+                                <code>TEAM_13_DSCI550_WEBDATAVIZ</code> mini-site with interactive D3
+                                visualizations of BFRO Bigfoot sightings. The GitHub Pages deployment has
+                                since gone offline; the source repository may be recoverable or re-hosted here.
+                            </p>
+                            <p>
+                                <a href="https://abotansky.github.io/TEAM_13_DSCI550_WEBDATAVIZ/html/"
+                                   class="btn btn-primary" role="button" target="_blank">View Site (may be offline)</a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card: Bergseth et al. Team (Spring 2023) -->
+                <div class="col-sm-6 col-md-4">
+                    <div class="thumbnail team-card">
+                        <img src="images/bigfoot-banner.svg" alt="Bigfoot D3 visualizations">
+                        <div class="caption">
+                            <h3>Bergseth et al. &mdash; Spring 2023</h3>
+                            <span class="tag-offline">Pages deployment offline</span>
+                            <p>
+                                A six-member team (Tomine Bergseth, Ariel Martinez, Devashish Sonawane, Willy
+                                Tang, Ekaterina Shtyrkova, Kyosuke Chikamatsu) built five D3 visualizations:
+                                a line chart, US sightings map, nested-circles chart, bubble chart, and word
+                                cloud from BFRO data.
+                            </p>
+                            <p>
+                                <a href="https://github.com/tominebergseth/550_Visualization_Website"
+                                   class="btn btn-default" role="button" target="_blank">GitHub Source</a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-12" style="margin-top:20px">
+                    <p class="lead">
+                        Know of another DSCI 550 Bigfoot visualization project?
+                        <a href="http://irds.usc.edu/">Contact the IRDS group</a> to have it added.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Dataset -->
+    <section id="search" class="search-section" style="margin-top:-1%; margin-bottom:5%">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <hr class="featurette-divider">
+                    <h1>Dataset &amp; Tools</h1>
+                    <hr class="featurette-divider">
+                </div>
+                <div class="col-lg-12">
+                    <p class="lead">
+                        The class used the BFRO (Bigfoot Field Researchers Organization) sightings dataset,
+                        containing thousands of reported Bigfoot encounters across North America with location,
+                        date, classification, and witness description fields. Students further enriched the data
+                        with moon phase, weather, terrain elevation, and population-density features from
+                        additional public APIs and datasets.
+                    </p>
+                    <p>
+                        <a class="btn btn-primary btn-lg"
+                           href="https://www.kaggle.com/datasets/josephvm/bigfoot-sightings-data"
+                           target="_blank">BFRO Dataset on Kaggle</a>
+                        &nbsp;
+                        <a class="btn btn-primary btn-lg"
+                           href="https://nguyenlamvu88.github.io/dsci550_assignment_3_visualizations/dsci550_bigfoot_sightings_visualizations.html"
+                           target="_blank">Browse Visualizations</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Partners -->
+    <section id="learn-more" class="learn-more-section">
+        <div class="container">
+            <div class="col-lg-12" style="margin-top:8%">
+                <hr class="featurette-divider" style="margin-top:-1%">
+                <h1 align="center">USC Data Science Partner Sites</h1>
+                <hr class="featurette-divider">
+            </div>
+            <div class="row">
+                <div class="col-md-6 col-sm-6" style="margin-top:3%">
+                    <div class="panel panel-info">
+                        <div class="panel-heading"><h4><center>IRDS</center></h4></div>
+                        <div class="panel-body">
+                            <p>The Information Retrieval and Data Science Group's mission is to research and
+                            develop open source software to analyze, ingest, process, and manage Big Data and
+                            turn it into information.</p>
+                        </div>
+                        <div class="panel-footer"><center>
+                            <a href="http://irds.usc.edu/" class="btn btn-info">Visit IRDS</a>
+                        </center></div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-sm-6" style="margin-top:3%">
+                    <div class="panel panel-info">
+                        <div class="panel-heading"><h4><center>Related DSCI 550 Sites</center></h4></div>
+                        <div class="panel-body">
+                            <p>Explore other USC DSCI 550 data visualization archives: UFO sightings, haunted
+                            places, Pixstory social media analysis, and phishing email datasets — all built by
+                            USC students using the same IRDS data science pipeline.</p>
+                        </div>
+                        <div class="panel-footer"><center>
+                            <a href="http://ufo.usc.edu/"     class="btn btn-info" style="margin:3px">UFO</a>
+                            <a href="http://haunted.usc.edu/" class="btn btn-info" style="margin:3px">Haunted</a>
+                            <a href="http://pixstory.usc.edu/" class="btn btn-info" style="margin:3px">Pixstory</a>
+                            <a href="http://phishing.usc.edu/" class="btn btn-info" style="margin:3px">Phishing</a>
+                        </center></div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-12 credits-section">
+                <h3 align="center">Credits</h3>
+                <hr class="featurette-divider">
+                <div class="row">
+                    <p>Dr. Chris Mattmann &mdash; <a href="http://mattmann.ai" style="color:#ffcc00">Visit his website</a></p>
+                    <p>DSCI 550 Spring 2024 &amp; Spring 2023 Classes &mdash; Bigfoot web data visualization assignment</p>
+                    <p>Visualizations by: Vu L. Nguyen (Spring 2024); Team 13 / A. Botansky (Spring 2024);
+                       T. Bergseth, A. Martinez, D. Sonawane, W. Tang, E. Shtyrkova, K. Chikamatsu (Spring 2023)</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <hr class="featurette-divider">
+    <div class="container">
+        <footer><p align="center">&copy; USC Data Science Group. All Rights Reserved.</p></footer>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="js/jquery.easing.min.js"></script>
+    <script src="js/scrolling-nav.js"></script>
+</body>
+</html>

@@ -1,0 +1,167 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1400 600" width="1400" height="600">
+  <defs>
+    <linearGradient id="bf-sky" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#060e08"/>
+      <stop offset="45%" style="stop-color:#0d2010"/>
+      <stop offset="100%" style="stop-color:#041008"/>
+    </linearGradient>
+    <linearGradient id="bf-mist" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#7aaa88;stop-opacity:0"/>
+      <stop offset="100%" style="stop-color:#a8c8b0;stop-opacity:0.22"/>
+    </linearGradient>
+    <linearGradient id="bf-ground" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#020c04"/>
+      <stop offset="100%" style="stop-color:#000802"/>
+    </linearGradient>
+    <filter id="bf-glow">
+      <feGaussianBlur stdDeviation="8" result="blur"/>
+      <feComposite in="SourceGraphic" in2="blur" operator="over"/>
+    </filter>
+    <filter id="bf-soften">
+      <feGaussianBlur stdDeviation="2"/>
+    </filter>
+    <filter id="bf-mistblur">
+      <feGaussianBlur stdDeviation="6"/>
+    </filter>
+  </defs>
+
+  <!-- Background sky -->
+  <rect width="1400" height="600" fill="url(#bf-sky)"/>
+
+  <!-- Stars scattered -->
+  <g fill="#d0e8d4" opacity="0.7">
+    <circle cx="80"  cy="45"  r="1.2"/>
+    <circle cx="210" cy="22"  r="0.9"/>
+    <circle cx="380" cy="58"  r="1.4"/>
+    <circle cx="520" cy="18"  r="0.8"/>
+    <circle cx="680" cy="38"  r="1.2"/>
+    <circle cx="820" cy="55"  r="0.9"/>
+    <circle cx="960" cy="28"  r="1.4"/>
+    <circle cx="1100" cy="48" r="1.0"/>
+    <circle cx="1280" cy="35" r="1.2"/>
+    <circle cx="140" cy="88"  r="0.8"/>
+    <circle cx="310" cy="72"  r="1.3"/>
+    <circle cx="460" cy="95"  r="0.9"/>
+    <circle cx="600" cy="65"  r="1.1"/>
+    <circle cx="760" cy="80"  r="0.8"/>
+    <circle cx="900" cy="42"  r="1.3"/>
+    <circle cx="1050" cy="70" r="0.9"/>
+    <circle cx="1200" cy="55" r="1.1"/>
+    <circle cx="40"  cy="115" r="0.8"/>
+    <circle cx="1360" cy="60" r="1.0"/>
+    <circle cx="740" cy="110" r="0.8"/>
+    <circle cx="290" cy="130" r="1.1"/>
+    <circle cx="1140" cy="95" r="0.9"/>
+  </g>
+
+  <!-- Moon glow (upper right) -->
+  <circle cx="1180" cy="90" r="80" fill="#c8e0b8" opacity="0.07" filter="url(#bf-glow)"/>
+  <circle cx="1180" cy="90" r="48" fill="#d8eeca" opacity="0.18"/>
+  <circle cx="1180" cy="90" r="38" fill="#e0f2d8" opacity="0.30"/>
+  <!-- Moon craters suggestion -->
+  <circle cx="1168" cy="78"  r="6" fill="#c0d8b0" opacity="0.35"/>
+  <circle cx="1192" cy="100" r="4" fill="#c0d8b0" opacity="0.25"/>
+
+  <!-- Background mountain ridge -->
+  <polygon points="0,380 80,260 200,320 340,210 500,300 640,195 780,275 920,200 1060,290 1200,215 1340,270 1400,250 1400,600 0,600"
+           fill="#081408" opacity="0.9"/>
+
+  <!-- Far mid-forest tree layer -->
+  <g fill="#061008" opacity="0.85">
+    <polygon points="40,430  60,300  80,430"/>
+    <polygon points="85,440  110,280 135,440"/>
+    <polygon points="135,425 158,305 181,425"/>
+    <polygon points="180,438 202,290 224,438"/>
+    <polygon points="230,420 248,310 266,420"/>
+    <polygon points="1150,430 1170,295 1190,430"/>
+    <polygon points="1200,438 1220,278 1240,438"/>
+    <polygon points="1248,425 1268,298 1288,425"/>
+    <polygon points="1300,440 1318,285 1336,440"/>
+    <polygon points="1350,428 1370,300 1390,428"/>
+  </g>
+
+  <!-- Atmospheric mist band -->
+  <rect x="0" y="330" width="1400" height="180" fill="url(#bf-mist)" filter="url(#bf-mistblur)"/>
+
+  <!-- Mid forest left (denser) -->
+  <g fill="#040d05">
+    <polygon points="-10,600 45,330 100,600"/>
+    <polygon points="60,600  115,295 170,600"/>
+    <polygon points="130,600 188,320 246,600"/>
+    <polygon points="200,600 250,345 300,600"/>
+    <rect x="38"  y="510" width="14" height="90"/>
+    <rect x="105" y="505" width="16" height="95"/>
+    <rect x="173" y="512" width="15" height="88"/>
+    <rect x="236" y="515" width="13" height="85"/>
+  </g>
+
+  <!-- Mid forest right (denser) -->
+  <g fill="#040d05">
+    <polygon points="1140,600 1190,320 1240,600"/>
+    <polygon points="1210,600 1262,298 1314,600"/>
+    <polygon points="1285,600 1335,330 1385,600"/>
+    <polygon points="1360,600 1405,295 1450,600"/>
+    <rect x="1183" y="508" width="14" height="92"/>
+    <rect x="1255" y="502" width="16" height="98"/>
+    <rect x="1327" y="510" width="14" height="90"/>
+    <rect x="1395" y="505" width="13" height="95"/>
+  </g>
+
+  <!-- Bigfoot silhouette - large, center-left, walking right -->
+  <!-- At x=580 base, y base ~520, total height ~310px -->
+  <g transform="translate(580, 215)" fill="#020a03">
+    <!-- Left leg (back, slightly behind) -->
+    <ellipse cx="28" cy="255" rx="22" ry="72" transform="rotate(14,28,255)" opacity="0.95"/>
+    <!-- Right leg (forward stride) -->
+    <ellipse cx="-32" cy="258" rx="24" ry="78" transform="rotate(-12,-32,258)"/>
+    <!-- Feet -->
+    <ellipse cx="-42" cy="318" rx="28" ry="12" transform="rotate(-8,-42,318)"/>
+    <ellipse cx="38"  cy="316" rx="24" ry="11" transform="rotate(10,38,316)"/>
+    <!-- Torso (large, barrel-chested) -->
+    <ellipse cx="0" cy="148" rx="62" ry="88"/>
+    <!-- Left shoulder/arm (raised, swinging) -->
+    <ellipse cx="-72" cy="125" rx="20" ry="68" transform="rotate(-28,-72,125)"/>
+    <!-- Right arm (back) -->
+    <ellipse cx="68"  cy="118" rx="18" ry="60" transform="rotate(18,68,118)"/>
+    <!-- Hands -->
+    <circle cx="-95" cy="86"  r="16"/>
+    <circle cx="82"  cy="80"  r="14"/>
+    <!-- Neck -->
+    <ellipse cx="-8" cy="65" rx="22" ry="18"/>
+    <!-- Head (forward-tilted, slightly pointed) -->
+    <ellipse cx="-14" cy="28" rx="40" ry="44"/>
+    <!-- Brow ridge suggestion -->
+    <ellipse cx="-20" cy="8"  rx="30" ry="12"/>
+    <!-- Fur shaggy outline -->
+    <ellipse cx="0" cy="140" rx="75" ry="105" fill="none" stroke="#061008" stroke-width="6" opacity="0.6"/>
+  </g>
+
+  <!-- Footprint tracks ahead of Bigfoot -->
+  <g fill="#020a03" opacity="0.55">
+    <ellipse cx="430" cy="548" rx="22" ry="34" transform="rotate(-18,430,548)"/>
+    <ellipse cx="476" cy="530" rx="20" ry="30" transform="rotate(12,476,530)"/>
+    <ellipse cx="396" cy="530" rx="20" ry="30" transform="rotate(-22,396,530)"/>
+  </g>
+
+  <!-- Foreground undergrowth / ground mass -->
+  <ellipse cx="700" cy="618" rx="800" ry="110" fill="#020b04"/>
+  <rect x="0" y="555" width="1400" height="45" fill="url(#bf-ground)"/>
+
+  <!-- Subtle green ground-level glow -->
+  <ellipse cx="620" cy="490" rx="420" ry="80" fill="#1a4a22" opacity="0.10" filter="url(#bf-softblur)"/>
+
+  <!-- Foreground fern/brush silhouettes left -->
+  <g fill="#010802" opacity="0.9">
+    <polygon points="0,600 30,530 60,600"/>
+    <polygon points="20,600 55,510 90,600"/>
+    <polygon points="50,600 80,525 110,600"/>
+    <polygon points="0,600 -20,540 20,600"/>
+  </g>
+  <!-- Foreground fern right -->
+  <g fill="#010802" opacity="0.9">
+    <polygon points="1340,600 1370,518 1400,600"/>
+    <polygon points="1310,600 1345,530 1380,600"/>
+    <polygon points="1280,600 1310,522 1340,600"/>
+    <polygon points="1380,600 1400,535 1420,600"/>
+  </g>
+</svg>
