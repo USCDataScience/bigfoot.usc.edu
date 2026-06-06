@@ -55,11 +55,12 @@
 /* ── Hero / Intro ────────────────────────────────────── */
 .bigfoot-intro {
     background-image:
-        linear-gradient(rgba(4, 14, 6, 0.20), rgba(4, 14, 6, 0.45)),
-        url('../images/bigfoot-banner.svg') !important;
+        linear-gradient(rgba(4, 14, 6, 0.35), rgba(4, 14, 6, 0.55)),
+        url('../images/bigfoot-hero.png') !important;
     background-attachment: fixed;
     background-size: cover;
     background-position: center center;
+    background-repeat: no-repeat;
 }
 
 #intro .title {

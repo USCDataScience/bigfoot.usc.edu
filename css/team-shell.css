@@ -1,0 +1,40 @@
+/* Wrapper shell for team visualization pages — keeps site nav visible above student content */
+
+body.team-shell-body {
+    padding-top: 70px;
+    background: #f0f4f0;
+    overflow: hidden;
+}
+
+.team-shell-header {
+    margin-bottom: 0;
+}
+
+.team-shell-title {
+    background: #fff;
+    border-bottom: 1px solid #c8d8ca;
+    padding: 12px 0;
+    margin: 0;
+}
+
+.team-shell-title h2 {
+    margin: 0;
+    font-size: 22px;
+    color: #2d6a35;
+    font-weight: 700;
+}
+
+.team-shell-title p {
+    margin: 4px 0 0;
+    color: #666;
+    font-size: 14px;
+}
+
+.team-viz-frame {
+    width: 100%;
+    height: calc(100vh - 130px);
+    min-height: 600px;
+    border: 0;
+    display: block;
+    background: #fff;
+}
